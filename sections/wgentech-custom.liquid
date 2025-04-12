@@ -1,0 +1,127 @@
+<!-- sections/wgentech-custom.liquid -->
+{%- if section.blocks.size > 0 -%}
+  {{ 'lmt-wgentech.css' | asset_url | stylesheet_tag }}
+  <div class="lmt-section-inner">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'heading' -%}
+          {%- if block.settings.text != blank -%}
+            <h2 class="lmt-s-heading" {{ block.shopify_attributes }}>{{ block.settings.text }}</h2>
+          {%- endif -%}
+        {%- when 'col_image' -%}
+        {%- liquid
+            assign image_1 = block.settings.image_1
+            assign image_1_mb = block.settings.image_1_mb | default: image_1
+            assign image_2 = block.settings.image_2
+            assign image_2_mb = block.settings.image_2_mb | default: image_2
+            assign sizes = '(min-768px) 400px, 50vw'
+        -%}
+          <div class="lmt-col-image" {{ block.shopify_attributes }}>
+            <div class="lmt-image">
+              {%- liquid
+                if image_1 != blank
+                  echo '<picture class="hdt-media-wrapper">'
+                  if block.settings.image_1_mb != blank and image_1_mb != image_1
+                    assign srcset = image_1_mb | image_url: width: image_1_mb.width | image_tag: widths: '100,200,300,400,500,600,700', alt: null | split: 'srcset="' | last
+                    unless srcset contains 'src='
+                      echo '<source media="(max-width: 767px)" srcset="' | append: srcset | replace_first: 'style=', 'data-none='
+                    endunless
+                  endif
+                  echo image_1 | image_url: width: image_1.width | image_tag: loading: 'eager', class: 'lmt-s-image', sizes: sizes, widths: '100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500'
+                  echo '</picture>'
+                else
+                  echo 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg'
+                endif
+              -%}
+            </div>
+            <div class="lmt-image">
+              {%- liquid
+                if image_2 != blank
+                  echo '<picture class="hdt-media-wrapper">'
+                  if block.settings.image_2_mb != blank and image_2_mb != image_2
+                    assign srcset = image_2_mb | image_url: width: image_2_mb.width | image_tag: widths: '100,200,300,400,500,600,700', alt: null | split: 'srcset="' | last
+                    unless srcset contains 'src='
+                      echo '<source media="(max-width: 767px)" srcset="' | append: srcset | replace_first: 'style=', 'data-none='
+                    endunless
+                  endif
+                  echo image_2 | image_url: width: image_2.width | image_tag: loading: 'eager', class: 'lmt-s-image', sizes: sizes, widths: '100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500'
+                  echo '</picture>'
+                else
+                  echo 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg'
+                endif
+              -%}
+            </div>
+          </div>
+        {%- when 'text' -%}
+          {%- if block.settings.text != blank -%}
+            <div class="lmt-s-text" {{ block.shopify_attributes }}>
+              {{- block.settings.text -}}
+            </div>
+          {%- endif -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}
+{% schema %}
+  {
+    "name": "Wgentech custom",
+    "tag": "section",
+    "class": "lmt-section lmt-wg",
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Heading",
+            "default": "Lorem ullamco"
+          },
+        ]
+      },
+      {
+        "type": "col_image",
+        "name": "Image column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_1_mb",
+            "label": "Image 1 mobile"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_2_mb",
+            "label": "Image 2 mobile"
+          },
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          },
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Wgentech custom"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,75 +1,48 @@
-{
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "wgentech_custom_iUc6BG": {
+      "type": "wgentech-custom",
       "blocks": {
-        "heading": {
+        "heading_AVLYUB": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "text": "Lorem ullamco"
           }
         },
-        "button": {
-          "type": "buttons",
+        "col_image_je9md8": {
+          "type": "col_image",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image_1": "shopify://shop_images/Mask_group.jpg",
+            "image_1_mb": "shopify://shop_images/Mask_group_2bf5db0b-da4b-4c47-9f1f-0e64c17f56b0.jpg",
+            "image_2": "shopify://shop_images/Mask_group_0e594e28-f6f2-4117-a5ae-8b1e93d3d869.jpg",
+            "image_2_mb": "shopify://shop_images/Mask_group_12a0072b-05f4-4ace-991d-fe6f0527f94b.jpg"
+          }
+        },
+        "text_6bkzjY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p><p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading_AVLYUB",
+        "col_image_je9md8",
+        "text_6bkzjY"
       ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
+      "settings": {}
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "wgentech_custom_iUc6BG"
   ]
 }
