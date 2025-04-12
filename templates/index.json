@@ -30,7 +30,7 @@
         "text_6bkzjY": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p><p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem<br/> reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. <br/>Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum<br/> consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem<br/> cupidatat do labore.</p><p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco<br/> eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat<br/> consequat pariatur.</p>"
           }
         }
       },
@@ -40,9 +40,159 @@
         "text_6bkzjY"
       ],
       "settings": {}
+    },
+    "lmt_test_2_JNLDjE": {
+      "type": "lmt-test-2",
+      "blocks": {
+        "image_MKHGXD": {
+          "type": "_image",
+          "settings": {
+            "image": "shopify://shop_images/Hero_Image_696px_Desktop.jpg",
+            "image_mb": "shopify://shop_images/Hero_Image_696px_Desktop_dbd63147-95d1-4db7-b41d-1c9c54e1a572.jpg"
+          },
+          "blocks": {}
+        },
+        "lmt_box_i7M7CC": {
+          "type": "_lmt_box",
+          "settings": {},
+          "blocks": {
+            "heading_iEwc8W": {
+              "type": "_heading",
+              "settings": {
+                "heading": "Lorem ipsum"
+              },
+              "blocks": {}
+            },
+            "title_K7Q7FR": {
+              "type": "_title",
+              "settings": {
+                "title": "<p>Excepteur eiusmod consectetur</p>"
+              },
+              "blocks": {}
+            },
+            "text_BVMNpB": {
+              "type": "_text",
+              "settings": {
+                "text": "<p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
+              },
+              "blocks": {}
+            },
+            "title_WXAipA": {
+              "type": "_title",
+              "settings": {
+                "title": "<p>Quis aliqua reprehenderit</p>"
+              },
+              "blocks": {}
+            },
+            "text_JWMnK9": {
+              "type": "_text",
+              "settings": {
+                "text": "<p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
+              },
+              "blocks": {}
+            },
+            "title_3e3itk": {
+              "type": "_title",
+              "settings": {
+                "title": "<p>Ad sit cillum amet duis quis commodo</p>"
+              },
+              "blocks": {}
+            },
+            "text_QM3Hyp": {
+              "type": "_text",
+              "settings": {
+                "text": "<p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_iEwc8W",
+            "title_K7Q7FR",
+            "text_BVMNpB",
+            "title_WXAipA",
+            "text_JWMnK9",
+            "title_3e3itk",
+            "text_QM3Hyp"
+          ]
+        }
+      },
+      "block_order": [
+        "image_MKHGXD",
+        "lmt_box_i7M7CC"
+      ],
+      "settings": {
+        "reverse_mb": true,
+        "space_2": false
+      }
+    },
+    "lmt_test_2_HnVzkj": {
+      "type": "lmt-test-2",
+      "blocks": {
+        "lmt_box_wd4TNm": {
+          "type": "_lmt_box",
+          "settings": {},
+          "blocks": {
+            "heading_i86TK3": {
+              "type": "_heading",
+              "settings": {
+                "heading": "<p>Mollit aliquip do ipsum consectetur</p>"
+              },
+              "blocks": {}
+            },
+            "text_HjrDCE": {
+              "type": "_text",
+              "settings": {
+                "text": "<p>Ex laborum ea qui consectetur mollit commodo eiusmod culpa dolor cupidatat. Ullamco dolore irure ea sit elit velit non officia. Ad eu reprehenderit in et voluptate mollit. Reprehenderit incididunt magna consequat enim sit eiusmod est dolor laborum cupidatat.</p>"
+              },
+              "blocks": {}
+            },
+            "text_JYDCYU": {
+              "type": "_text",
+              "settings": {
+                "text": "<p>Ipsum minim mollit irure dolore. Sint fugiat deserunt dolor aute enim et cillum adipisicing cillum nostrud anim. Sit dolore incididunt dolore do sunt pariatur consectetur id qui pariatur eu incididunt adipisicing. Irure sint fugiat officia veniam consectetur. Esse laborum amet aliqua ad in sunt labore duis.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_i86TK3",
+            "text_HjrDCE",
+            "text_JYDCYU"
+          ]
+        },
+        "image_AdLh8E": {
+          "type": "_image",
+          "settings": {
+            "image": "shopify://shop_images/Hero_Image_696px_Desktop_0a514612-4ca8-468f-9184-96aefdd367e9.jpg",
+            "image_mb": "shopify://shop_images/Hero_Image_696px_Desktop_1c27ee97-3587-4803-9b56-caf410ca9507.jpg"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "lmt_box_wd4TNm",
+        "image_AdLh8E"
+      ],
+      "settings": {
+        "reverse_mb": false,
+        "space_2": true
+      }
+    },
+    "custom_liquid_RzCkFw": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
-    "wgentech_custom_iUc6BG"
+    "wgentech_custom_iUc6BG",
+    "lmt_test_2_JNLDjE",
+    "lmt_test_2_HnVzkj",
+    "custom_liquid_RzCkFw"
   ]
 }
