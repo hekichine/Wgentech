@@ -1,0 +1,28 @@
+<!-- blocks/_title.liquid -->
+{%- liquid
+  assign title = block.settings.title
+  unless title
+    continue
+  endunless
+-%}
+<div class="lmt-block-title" {{ block.shopify_attributes }}>
+ {{- title -}}
+</div>
+{% schema %}
+  {
+    "name": "Title",
+    "tag": null,
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "title"
+      },
+    ],
+    "presets": [
+      {
+        "name": "Title"
+      }
+    ]
+  }
+{% endschema %}

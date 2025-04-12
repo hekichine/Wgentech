@@ -1,0 +1,40 @@
+<!-- sections/lmt-test-2.liquid -->
+{{ 'lmt-test-2.scss' | asset_url | stylesheet_tag }}
+<div id="{{ section.id }}" class="lmt-section-inner">
+  <div class="lmt-grid lmt-reverse-{{ section.settings.reverse_mb }} lmt-space-{{ section.settings.space_2 }}">
+    {% content_for 'blocks' %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "lmt test 2",
+    "class": "lmt-test-2 lmt-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "reverse_mb",
+        "label": "Reverse mobile"
+      },
+      {
+        "type": "checkbox",
+        "id": "space_2",
+        "label": "Space 2",
+        "default": false
+      },
+    ],
+    "blocks": [
+      {
+        "type": "_image"
+      },
+      {
+        "type": "_lmt_box"
+      }
+    ],
+    "presets": [
+      {
+        "name": "lmt test 2"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,44 @@
+<!-- blocks/_image.liquid -->
+<div class="lmt-block-image" {{ block.shopify_attributes }}> 
+  {%- liquid
+    assign image = block.settings.image
+    assign image_mb = block.settings.image_mb
+    assign sizes = '(min-768px) 700, 100vw'
+    if image != blank
+      echo '<picture class="hdt-media-wrapper">'
+      if block.settings.image_mb != blank and image_mb != image
+        assign srcset = image_mb | image_url: width: image_mb.width | image_tag: widths: '100,200,300,400,500,600,700', alt: null | split: 'srcset="' | last
+        unless srcset contains 'src='
+          echo '<source media="(max-width: 767px)" srcset="' | append: srcset | replace_first: 'style=', 'data-none='
+        endunless
+      endif
+      echo image | image_url: width: image.width | image_tag: loading: 'eager', class: 'lmt-s-image', sizes: sizes, widths: '100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500'
+      echo '</picture>'
+    else
+      echo 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg'
+    endif
+  -%}
+</div>
+{% schema %}
+  {
+    "name": "Image",
+    "tag": null,
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mb",
+        "label": "Image mobile"
+      },
+    ],
+    "presets": [
+      {
+        "name": "Image"
+      }
+    ]
+  }
+{% endschema %}

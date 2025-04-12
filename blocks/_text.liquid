@@ -1,0 +1,28 @@
+<!-- blocks/_text.liquid -->
+{%- liquid
+  assign text = block.settings.text
+  unless text
+    continue
+  endunless
+-%}
+<div class="lmt-block-text" {{ block.shopify_attributes }}>
+ {{- text -}}
+</div>
+{% schema %}
+  {
+    "name": "Text",
+    "tag": null,
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "text"
+      },
+    ],
+    "presets": [
+      {
+        "name": "Text"
+      }
+    ]
+  }
+{% endschema %}

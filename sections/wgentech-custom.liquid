@@ -11,9 +11,9 @@
         {%- when 'col_image' -%}
         {%- liquid
             assign image_1 = block.settings.image_1
-            assign image_1_mb = block.settings.image_1_mb | default: image_1
+            assign image_1_mb = block.settings.image_1_mb
             assign image_2 = block.settings.image_2
-            assign image_2_mb = block.settings.image_2_mb | default: image_2
+            assign image_2_mb = block.settings.image_2_mb
             assign sizes = '(min-768px) 400px, 50vw'
         -%}
           <div class="lmt-col-image" {{ block.shopify_attributes }}>

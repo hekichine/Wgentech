@@ -1,0 +1,28 @@
+<!-- blocks/_heading.liquid -->
+{%- liquid
+  assign heading = block.settings.heading
+  unless heading
+    continue
+  endunless
+-%}
+<h3 class="lmt-block-heading" {{ block.shopify_attributes }}>
+ {{- heading | strip_html -}}
+</h3>
+{% schema %}
+  {
+    "name": "Heading",
+    "tag": null,
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+    ],
+    "presets": [
+      {
+        "name": "Heading"
+      }
+    ]
+  }
+{% endschema %}

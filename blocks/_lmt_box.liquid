@@ -1,0 +1,29 @@
+<!-- blocks/_lmt_box.liquid -->
+<div class="lmt-box-pos">
+  {% content_for 'blocks' %}
+</div>
+{% schema %}
+  {
+    "name": "Box",
+    "class": "lmt-box",
+    "settings": [
+    
+    ],
+    "blocks": [
+      {
+        "type": "_heading"
+      },
+      {
+        "type": "_title"
+      },
+      {
+        "type": "_text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Box"
+      }
+    ]
+  }
+{% endschema %}
