@@ -1,0 +1,5 @@
+[environments.dev]
+theme = ""
+store = "storepunime.myshopify.com"
+password  = "shptka_13a23796e5601a4c2fbf1e0c939edbbf"
+#ignore =  ["config/settings_data.json", "templates/index.json", "assets/colors.css", "templatess/*.json", "sections/*.json"]
