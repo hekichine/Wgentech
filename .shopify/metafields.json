@@ -1,0 +1,106 @@
+{
+  "article": [],
+  "blog": [],
+  "collection": [
+    {
+      "key": "collections",
+      "namespace": "ecomposer",
+      "name": "Define sub collections for current collection",
+      "description": "Set the sub collection for curernt collection.",
+      "type": {
+        "name": "list.collection_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [],
+  "product": [
+    {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "countdown",
+      "namespace": "ecomposer",
+      "name": "EComposer product countdown end at",
+      "description": "Set date and time countdown end at",
+      "type": {
+        "name": "date_time",
+        "category": "DATE_TIME"
+      }
+    },
+    {
+      "key": "countdown_from",
+      "namespace": "ecomposer",
+      "name": "EComposer product countdown start at",
+      "description": "Set date and time countdown start at",
+      "type": {
+        "name": "date_time",
+        "category": "DATE_TIME"
+      }
+    },
+    {
+      "key": "required_name",
+      "namespace": "theme",
+      "name": "Required name",
+      "description": "",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "group_media_obj",
+      "namespace": "theme",
+      "name": "Theme group media obj",
+      "description": "",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    }
+  ],
+  "variant": [],
+  "shop": []
+}
